@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Smartstrunk Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagecolor">
+    <nav class="navbar navbar-inverse nav"> <!--nav start-->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="images/logo.png"><img src="images/logo.png" width="40" height="30"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">home</a></li>
+                <li class="active"><a href="about.html">about</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle active" data-toggle="dropdown" href="products.html">products
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="dailyuseitems.html">dailyuse items</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="pricing.html">pricing</a></li>
+                <li class="active"><a href="contanct.html">contanct us</a></li>
+            </ul>
+        </div>
+    </nav> <!--nav end-->
+    <div class=" container-fluid containercontanct text-center"> <!--container contanct start-->
+        <div class="row heading">
+            <div class="col-sm-12">
+                <h1> Reach Us here </h1>
+                <h3> if you have any query feel free to ask and share your feedback</h3>
+            </div>
+        </div>
+    </div> <!--container contanct end-->
+    <div class="container-fluid form"> <!--container form start-->
+        <form action="/action_page.php">
+            <h3> <label for="fname">First name:</label> </h3><br>
+            <input type="text" required minlength="3" maxlength="8" id="fname" name="fname"
+                placeholder=" first name"><br>
+            <h3> <label for="lname">Last name:</label><br> </h3>
+            <input type="text" required minlength="3" maxlength="8" id="lname" name="lname" placeholder="last name"><br>
+            <h3> <label for="email">Email Address:</label> </h3><br>
+            <input type="email" required id="email" name="email" placeholder=" Email address"><br>
+            <h3> <label for="Password"> Password:</label><br> </h3>
+            <input type="password" required minlength="8" id="password" name="password" placeholder=" password"><br>
+
+            <h5> <input type="radio" required id="customer" name="fav_language" value="customer">
+                <label for=" customer">An individual customer</label><br>
+                <input type="radio" required id="wholesaler" name="fav_language" value="wholesaler">
+                <label for="wholesaler">A wholesaler</label><br>
+                <input type="radio" id="Shopkeeper" required name="fav_language" value="Shopkeeper">
+                <label for="Shopkeeper"> Shopkeeper</label>
+            </h5>
+            <h3>
+                <p><label for="feedback">Your review:</label></p>
+            </h3>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"
+                placeholder="Enter here what you feel about us"></textarea>
+            <br>
+            <h4> <input type="submit" value="Submit"> </h4>
+        </form>
+    </div> <!--container form end-->
+    <div class="foot text-center"> <!--foot container start-->
+        <hr>
+        <footer>
+            <p>@copyRight Smartstrunk
+            </p>
+            <p>All rights reserved</p>
+            <p><a class="email" href="mailto:shbz@example.com">shbz@example.com</a></p>
+        </footer>
+    </div> <!--foot container wnd-->
+</body>
+
+</html>
